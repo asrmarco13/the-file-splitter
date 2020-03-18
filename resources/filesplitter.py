@@ -7,8 +7,8 @@ class FileSplitter():
                  file_base_name,
                  file_ext,
                  working_dir,
-                 row_count=1000,
-                 encoding="utf-8",
+                 row_count,
+                 encoding,
                  ):
         self.filename = filename
         self.file_base_name = file_base_name
