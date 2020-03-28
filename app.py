@@ -1,5 +1,8 @@
 from resources.splitter import Splitter
 
 
-if __name__ == "__main__":
+def main():
     Splitter.run()
+
+# if __name__ == "__main__":
+#     main()
