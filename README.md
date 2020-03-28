@@ -4,7 +4,7 @@ File splitter is a tool that split large file into multiple small file. Often in
 
 FS allows you to split a heavy file into many small, small files. FS is easy to use. To launch it, just use the following command:
 ```python
-python app.py -f <filename>
+filesplitter -f <filename>
 ```
 FS by default creates 1 small single file every 1000 lines. If you want to increase or decrease the number of lines use the command **-r**.
 
@@ -12,7 +12,7 @@ If you want to change the encoding type of the source file, just use the command
 
 For help:
 ```python
-python app.py -h
+filesplitter -h
 ```
 Good use :smile:
 
