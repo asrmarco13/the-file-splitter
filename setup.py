@@ -6,7 +6,7 @@ with open("README.md") as f:
 
 setup(
     name="FileSplitter",
-    version="1.0.8",
+    version="2.0",
     packages=find_packages(),
     py_modules=["app"],
     entry_points={
