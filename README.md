@@ -1,9 +1,9 @@
 # The File Splitter (FS)
 
 ## **Content index**
-1. [Introduction](introduction)
-2. [Archlinux AUR one line package install](archlinux-aur-one-line-package-install)
-3. [Pypi installation](pypi-installation)
+1. [Introduction](#introduction)
+2. [Archlinux AUR one line package install](#archlinux-aur-one-line-package-install)
+3. [Pypi installation](#pypi-installation)
 
 ###  **Introduction**
 
