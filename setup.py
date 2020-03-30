@@ -6,14 +6,10 @@ with open("README.md") as f:
 
 setup(
     name="FileSplitter",
-    version="2.0",
+    version="2.1",
     packages=find_packages(),
     py_modules=["app"],
-    entry_points={
-        "console_scripts": [
-            "filesplitter = app:main",
-        ]
-    },
+    entry_points={"console_scripts": ["filesplitter = app:main",]},
     exclude_package_data={
         "": ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "requirements.txt"]
     },
@@ -32,7 +28,7 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-        "Operating System :: OS Independent"
+        "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires=">=3.6",
 )

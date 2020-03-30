@@ -1,4 +1,5 @@
 import os
+import constants
 
 
 class FileSplitter:
@@ -24,10 +25,8 @@ class FileSplitter:
         split_file = None
 
         print(
-            "Splitting %s into multiple files with %s lines"
-            % (
-                os.path.join(self.working_dir, self.file_base_name + self.file_ext),
-                str(self.row_count),
+            constants.INITIAL_SPLIT_HELP.format(
+                FileSplitter.path_join(self.working_dir, self.filename), self.row_count
             )
         )
 
@@ -43,15 +42,33 @@ class FileSplitter:
             if split_file:
                 split_file.close()
 
-        print("Created %s files." % (str(file_number - 1)))
+        file_number = FileSplitter.total_file_number(file_number)
+        print(
+            constants.TOTAL_FILES_CREATED_HELP.format(
+                file_number, FileSplitter.is_single_split_file(file_number)
+            )
+        )
 
     def split(self, file_number: int) -> str:
         """return a new file object ready to write to"""
-        new_file_name = "%s.%s%s" % (
-            self.file_base_name,
-            str(file_number),
-            self.file_ext,
+        new_file_name = "{}.{}{}".format(
+            self.file_base_name, file_number, self.file_ext,
         )
-        new_file_path = os.path.join(self.working_dir, new_file_name)
-        print("creating file %s" % (new_file_path))
+        new_file_path = FileSplitter.path_join(self.working_dir, new_file_name)
+        print(constants.CREATE_FILES_HELP.format(new_file_path))
         return new_file_path
+
+    @staticmethod
+    def path_join(*paths: str) -> str:
+        return os.path.join(*paths)
+
+    @staticmethod
+    def total_file_number(file_number: int) -> int:
+        return file_number - 1
+
+    @staticmethod
+    def is_single_split_file(file_number: int) -> str:
+        if file_number > 1:
+            return "files"
+
+        return "file"

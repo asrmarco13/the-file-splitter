@@ -1,20 +1,20 @@
 import argparse
 import os
+import constants
 from resources.filesplitter import FileSplitter
-
-
-FILENAME_REQUIRED = "Option -f <filename> is required"
-ROW_COUNT = "Row count (default is 1000)"
-ENCODING = "File encoding (default is utf-8)"
 
 
 class Splitter:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-f", "--filename", type=str, required=True, help=FILENAME_REQUIRED,
+        "-f",
+        "--filename",
+        type=str,
+        required=True,
+        help=constants.FILENAME_REQUIRED_HELP,
     )
-    parser.add_argument("-r", "--row-count", type=int, help=ROW_COUNT)
-    parser.add_argument("-e", "--encoding", type=str, help=ENCODING)
+    parser.add_argument("-r", "--row-count", type=int, help=constants.ROW_COUNT_HELP)
+    parser.add_argument("-e", "--encoding", type=str, help=constants.ENCODING_HELP)
 
     @classmethod
     def run(cls) -> None:
@@ -32,13 +32,13 @@ class Splitter:
     @staticmethod
     def is_row_count(row_count: int) -> int:
         if row_count is None:
-            row_count = 1000
+            row_count = constants.ROW_COUNT
 
         return row_count
 
     @staticmethod
     def is_encoding(encoding: str) -> str:
         if encoding is None:
-            encoding = "utf-8"
+            encoding = constants.ENCODING
 
         return encoding
