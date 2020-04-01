@@ -10,9 +10,8 @@
   <a href="https://pypi.org/project/FileSplitter/"><img alt="Pypi" src="https://img.shields.io/pypi/v/FileSplitter"></a>
   <a href="https://aur.archlinux.org/packages/python-filesplitter/"><img alt="AUR Archlinux" src="https://img.shields.io/aur/version/python-filesplitter"></a>
   <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
-    <a href="https://github.com/asrmarco13/the-file-splitter"><img alt="Follower" src="https://img.shields.io/github/followers/asrmarco13?style=social"></a>
-  <a href="https://github.com/asrmarco13/the-file-splitter"><img alt="Follower" src="https://img.shields.io/github/stars/asrmarco13/the-file-splitter?style=social"></a>
-  <a href="https://github.com/asrmarco13/the-file-splitter"><img alt="Follower" src="https://img.shields.io/github/watchers/asrmarco13/the-file-splitter?style=social"></a>  
+  <a href="https://github.com/asrmarco13/the-file-splitter"><img alt="Stars" src="https://img.shields.io/github/stars/asrmarco13/the-file-splitter?style=social"></a>
+  <a href="https://github.com/asrmarco13/the-file-splitter"><img alt="Watchers" src="https://img.shields.io/github/watchers/asrmarco13/the-file-splitter?style=social"></a>  
 <p>
 
 ## **Content index**
