@@ -1,5 +1,13 @@
 # The File Splitter (FS)
 
+<p align="center">
+  <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+  <a href="https://github.com/asrmarco13/the-file-splitter"><img alt="Python" src="https://img.shields.io/pypi/pyversions/latest"></a>
+  <a href="https://github.com/asrmarco13/the-file-splitter/blob/master/LICENSE"><img alt="License: GPL3" src="https://img.shields.io/cran/l/devtools"></a>
+  <a href="https://pypi.org/project/FileSplitter/"><img alt="Pypi" src="https://img.shields.io/badge/pypi-v2.0-blue"></a>
+  <a href="https://aur.archlinux.org/packages/python-filesplitter/"><img alt="AUR Archlinux" src="https://img.shields.io/badge/aur-v2.0-blue"></a>
+<p>
+
 ## **Content index**
 1. [Introduction](#introduction)
 2. [Archlinux AUR one line package install](#archlinux-aur-one-line-package-install)
